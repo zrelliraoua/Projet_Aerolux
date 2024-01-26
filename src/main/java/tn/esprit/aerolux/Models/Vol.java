@@ -12,7 +12,7 @@ public class Vol {
 
     private String numVol;
 
-    
+
     private String lieuArrivee;
     private String lieuDepart;
     private Integer placeDispo;

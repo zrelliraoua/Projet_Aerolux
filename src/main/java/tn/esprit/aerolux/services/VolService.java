@@ -15,9 +15,8 @@ public class VolService implements IService<Vol> {
 
     @Override
     public void ajouter(Vol vol) {
-        String req = "INSERT INTO Vol (nom,prenom,age) VALUES ('"+vol.getNumVol()+"','"+vol.getDateDepart()+"','"+vol.getDateArrive())";
+        String req = "INSERT INTO Vol (nom,prenom,age) VALUES ('"+vol.getNumVol()+"','"+vol.getDateDepart()+"','"+vol.getDateArrive();
     }
-
 
 
 
