@@ -18,6 +18,11 @@ public class VolService implements IService<Vol> {
         String req = "INSERT INTO Vol (nom,prenom,age) VALUES ('"+vol.getNumVol()+"','"+vol.getDateDepart()+"','"+vol.getDateArrive())";
     }
 
+
+
+
+    
+
     @Override
     public void modifier(Vol vol) {
     }
