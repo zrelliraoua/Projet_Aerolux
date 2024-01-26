@@ -5,8 +5,14 @@ import java.sql.Date;
 public class Vol {
     private Integer id;
     private Date dateDepart;
+
     private Date dateArrive;
+
+
+
     private String numVol;
+
+    
     private String lieuArrivee;
     private String lieuDepart;
     private Integer placeDispo;
