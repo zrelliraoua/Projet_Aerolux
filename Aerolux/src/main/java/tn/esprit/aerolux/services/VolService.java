@@ -4,19 +4,27 @@ import tn.esprit.aerolux.Models.Vol;
 import tn.esprit.aerolux.Utils.MyDatabase;
 
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 public class VolService implements IService<Vol> {
     private Connection connection;
 
-    public VolService(){
+    public VolService() {
         connection = MyDatabase.getInstance().getConnection();
     }
 
     @Override
-    public void ajouter(Vol vol) {
-        String req = "INSERT INTO Vol (nom,prenom,age) VALUES ('"+vol.getNumVol()+"','"+vol.getDateDepart()+"','"+vol.getDateArrive())";
+    public void ajouter(Vol vol) throws SQLException {
+        String req = "INSERT INTO Vol (numVol, dateDepart, dateArrive) VALUES ('" +
+                vol.getNumVol() + "','" +
+                vol.getDateDepart() + "','" +
+                vol.getDateArrive() + "')";
+        Statement st = connection.createStatement();
+        st.executeUpdate(req);
     }
+
 
     @Override
     public void modifier(Vol vol) {
