@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="tn.esprit.aerolux.controllers.DetailsVolController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Ajoutez vos éléments à l'intérieur de cette balise AnchorPane -->
+    <children>
+        <!-- Ajoutez ici vos labels et autres éléments -->
+        <Label fx:id="numVolLabel" layoutX="50" layoutY="50" text="" />
+        <Label fx:id="lieuArriveeLabel" layoutX="50" layoutY="100" text="" />
+        <ImageView fx:id="hotelImageView" fitWidth="200" fitHeight="200" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10" />
+
+        <!-- Ajoutez d'autres éléments selon vos besoins -->
+    </children>
+
+</AnchorPane>

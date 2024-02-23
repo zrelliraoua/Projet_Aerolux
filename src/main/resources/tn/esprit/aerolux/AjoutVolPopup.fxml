@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="tn.esprit.aerolux.controllers.AjoutVolPopup"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <Label text="Ajouter un nouveau vol" style="-fx-font-size: 18px;" layoutX="214" layoutY="26"/>
+
+    <GridPane layoutX="50" layoutY="66" hgap="10" vgap="10" styleClass="form-grid">
+
+        <Label text="Numéro de vol:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="numVolTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="text-field"/>
+
+        <Label text="Lieu de départ:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="lieuDepartTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="text-field"/>
+
+        <Label text="Lieu d'arrivée:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="lieuArriveeTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="text-field"/>
+
+        <Label text="Pilote ID:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="piloteIdTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="text-field"/>
+
+        <Label text="Nombre de places disponibles:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="placeDispoTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="text-field"/>
+
+        <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="descriptionTextField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        <Label text="Date d'arrivée:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <DatePicker fx:id="dateArriveeTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" styleClass="text-field"/>
+
+        <Label text="Date de départ:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+        <DatePicker fx:id="dateDepartTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" styleClass="text-field"/>
+
+        <Label text="hotel:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+        <TextField fx:id="hotelNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+
+        <Label text="adresse hotel :" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+        <TextField fx:id="hotelAdressTextField" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+
+
+        <Button text="Ajouter" onAction="#ajouterVol" GridPane.columnIndex="0" GridPane.rowIndex="10" styleClass="button"/>
+        <Button text="Annuler" onAction="#fermerPopup" GridPane.columnIndex="1" GridPane.rowIndex="10" styleClass="button"/>
+    </GridPane>
+
+    <stylesheets>
+        <URL value="@Styles/Popup.css"/>
+    </stylesheets>
+
+</AnchorPane>
